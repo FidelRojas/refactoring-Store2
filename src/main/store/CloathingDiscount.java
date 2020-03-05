@@ -4,7 +4,8 @@ public class CloathingDiscount implements DiscountCalculator {
 
 	@Override
 	public float calculateDiscount(OrderItem orderItem) {
-		// TODO Auto-generated method stub
+		if (orderItem.getQuantity() > 2) 
+			return orderItem.getProduct().getUnitPrice();
 		return 0;
 	}
 

@@ -45,7 +45,7 @@ public class OrderItem {
 		return totalItem;
 	}
 
-	private float calculateAmount() {
+	public float calculateAmount() {
 		return getProduct().getUnitPrice() * getQuantity();
 	}
 }
